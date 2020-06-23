@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         mydatabase.execSQL("CREATE TABLE IF NOT EXISTS Version(version_name VARCHAR,version_link VARCHAR);");
 
         mydatabase.execSQL("INSERT INTO Version VALUES('3.2','admin');");
+        mydatabase.execSQL("INSERT INTO Version VALUES('3.2','admin');");
         mydatabase.execSQL("INSERT INTO Version VALUES('3.3','admin');");
         mydatabase.execSQL("INSERT INTO Version VALUES('3.4','admin');");
         mydatabase.execSQL("INSERT INTO Version VALUES('3.5','admin');");
