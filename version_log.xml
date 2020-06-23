@@ -1,4 +1,4 @@
-<UpdateTracker>
+<AppUpdater>
 	<update>
 	<latestVersion>1.2.2</latestVersion>
 	<latestVersionCode>10</latestVersionCode>
@@ -9,4 +9,4 @@
 	-wsscs
 	-db sbsrgb
 	</update>
-</UpdateTracker>
+</AppUpdater>
