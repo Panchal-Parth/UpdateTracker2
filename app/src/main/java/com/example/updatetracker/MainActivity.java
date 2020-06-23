@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 //startActivity(new Intent(MainActivity.this,CheckUpdates.class));
                 new AppUpdater(MainActivity.this)
                         .setUpdateFrom(UpdateFrom.XML)
-                        .setUpdateXML("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/update-changelog.xml")
+                        .setUpdateXML("https://raw.githubusercontent.com/Panchal-Parth/UpdateTracker2/master/version_log.xml")
                         .setDisplay(Display.DIALOG)
                         .showAppUpdated(true)
                         .start();
