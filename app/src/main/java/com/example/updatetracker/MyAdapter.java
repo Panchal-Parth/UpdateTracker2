@@ -14,12 +14,13 @@ import java.util.ArrayList;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     private Context ctx;
-    private ArrayList<String> versionName, versionLink;
+    private ArrayList<String> versionName, versionLink,versionCode;
 
-    public MyAdapter(Context ctx, ArrayList<String> versionName, ArrayList<String> versionLink){
+    public MyAdapter(Context ctx, ArrayList<String> versionName, ArrayList<String>  versionCode,ArrayList<String> versionLink){
         this.ctx = ctx;
         this.versionName = versionName;
         this.versionLink = versionLink;
+        this.versionCode = versionCode;
     }
     @NonNull
     @Override
@@ -33,7 +34,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.versionName.setText(versionName.get(position));
-        holder.versionLink.setText(versionLink.get(position));
+        holder.versionLink.setText(versionLink.get(position)+"/tag/"+versionName.get(position));
+        holder.versionCode.setText("Version min API: "+versionCode.get(position));
     }
 
     @Override
@@ -42,13 +44,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
-        TextView versionName, versionLink;
+        TextView versionName, versionLink,versionCode;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             versionName = itemView.findViewById(R.id.versionName);
             versionLink = itemView.findViewById(R.id.versionLink);
-
+            versionCode = itemView.findViewById(R.id.versionCode);
         }
     }
 }
