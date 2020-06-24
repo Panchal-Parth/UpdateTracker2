@@ -1,6 +1,6 @@
 <AppUpdater>
 	<update>
-		<latestVersion>4.0</latestVersion>
+		<latestVersion>3.0</latestVersion>
 		<latestVersionCode>10</latestVersionCode>
 		<url>https://github.com/Panchal-Parth/UpdateTracker2/releases</url>
 		<releaseNotes>
